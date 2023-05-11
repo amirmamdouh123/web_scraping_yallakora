@@ -2,8 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+x=input('Please Enter date : (in Format YYYY-MM-DD)')
 
-page= requests.get(f"https://www.yallakora.com/Match-Center/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA?date=2022-11-23")
+
+page= requests.get(f"https://www.yallakora.com/Match-Center/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA?date={2022-11-23}")
 
 def main(page):
     src =page.content
